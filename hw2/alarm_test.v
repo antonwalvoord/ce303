@@ -4,7 +4,7 @@ module alarm_test;
     reg PANIC,EN,EXIT,WINDOW,DOOR,GARAGE;
     wire ALARM;
 
-    alarm(
+    alarm doubile(
         PANIC,EN,EXIT,WINDOW,DOOR,GARAGE,ALARM
     );
 
