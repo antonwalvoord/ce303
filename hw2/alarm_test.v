@@ -13,7 +13,7 @@ module alarm_test;
             // first case - should be alarm = 1
             assign PANIC = 1;
             assign EN = 1;
-            assign EXIT = 0;
+            assign EXIT = 1;
             assign WINDOW = 1;
             assign DOOR = 1;
             assign GARAGE = 0;
@@ -22,7 +22,7 @@ module alarm_test;
             assign PANIC = 0;
             #20
             // third case - should be alarm = 1
-            assign GARAGE = 1;
+            assign EXIT = 0;
             #20
             // fourth case - should be alarm = 0
             assign EN = 0;
