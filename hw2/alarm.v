@@ -6,7 +6,6 @@ module alarm(PANIC, EN, EXIT, WINDOW, DOOR, GARAGE, ALARM);
     output  ALARM;
 
     wire gate1,gate2,gate3;
-    // hellow rold
 
     nand(gate1,WINDOW,DOOR,GARAGE);
     not(gate2,EXIT);
