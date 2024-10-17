@@ -16,13 +16,17 @@ module alarm_test;
             assign EXIT = 0;
             assign WINDOW = 1;
             assign DOOR = 1;
-            #20 assign GARAGE = 1;
+            assign GARAGE = 1;
+            #20
             // second case - should be alarm = 0
-            #20 assign PANIC = 0;
+            assign PANIC = 0;
+            #20
             // third case - should be alarm = 1
-            #20 assign GARAGE = 1;
+            assign GARAGE = 1;
+            #20
             // fourth case - should be alarm = 0
-            #20 assign EN = 0;
-            #20 $finish;
+            assign EN = 0;
+            #20
+            $finish;
         end
 endmodule
