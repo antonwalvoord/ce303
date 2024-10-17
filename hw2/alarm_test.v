@@ -16,7 +16,7 @@ module alarm_test;
             assign EXIT = 0;
             assign WINDOW = 1;
             assign DOOR = 1;
-            assign GARAGE = 1;
+            assign GARAGE = 0;
             #20
             // second case - should be alarm = 0
             assign PANIC = 0;
