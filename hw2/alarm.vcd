@@ -1,5 +1,5 @@
 $date
-	Thu Oct 17 22:09:56 2024
+	Fri Oct 18 12:20:14 2024
 $end
 $version
 	Icarus Verilog
@@ -15,7 +15,7 @@ $var reg 1 $ EXIT $end
 $var reg 1 % GARAGE $end
 $var reg 1 & PANIC $end
 $var reg 1 ' WINDOW $end
-$scope module doubile $end
+$scope module instance1 $end
 $var wire 1 ! ALARM $end
 $var wire 1 " DOOR $end
 $var wire 1 # EN $end
