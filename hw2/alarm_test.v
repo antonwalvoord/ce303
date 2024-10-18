@@ -4,12 +4,14 @@ module alarm_test;
     reg PANIC,EN,EXIT,WINDOW,DOOR,GARAGE;
     wire ALARM;
 
-    alarm doubile(
+    alarm doubile (
         PANIC,EN,EXIT,WINDOW,DOOR,GARAGE,ALARM
     );
 
     initial
         begin
+            $dumpfile("alarm.vcd");
+            $dumpvars(0,alarm_test);
             // first case - should be alarm = 1
             assign PANIC = 1;
             assign EN = 1;
