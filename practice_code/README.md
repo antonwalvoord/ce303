@@ -1,0 +1,1 @@
+For the actual code look at the ".v" files - the rest are just compiler outputs/simulation outputs
