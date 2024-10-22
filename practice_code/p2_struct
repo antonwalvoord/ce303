@@ -1,0 +1,75 @@
+#! /mingw64/bin/vvp
+:ivl_version "13.0 (devel)" "(s20221226-556-gd8c3c51ab)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 11;
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\system.vpi";
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\va_math.vpi";
+S_0000019509ccdbd0 .scope module, "p2_struct_tb" "p2_struct_tb" 2 3;
+ .timescale -9 -11;
+v0000019509ba7650_0 .var "A", 0 0;
+v0000019509ba76f0_0 .var "B", 0 0;
+v0000019509ba7790_0 .var "C", 0 0;
+v0000019509beecf0_0 .net "F", 0 0, L_0000019509ba9b80;  1 drivers
+S_0000019509ccdd60 .scope module, "instance1" "P2" 2 7, 3 3 0, S_0000019509ccdbd0;
+ .timescale -9 -11;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "C";
+    .port_info 3 /OUTPUT 1 "F";
+L_0000019509ba9b10 .functor NOT 1, v0000019509ba7650_0, C4<0>, C4<0>, C4<0>;
+L_0000019509ba9a30 .functor AND 1, L_0000019509ba9b10, v0000019509ba76f0_0, C4<1>, C4<1>;
+L_0000019509ba9950 .functor AND 1, v0000019509ba7650_0, v0000019509ba7790_0, C4<1>, C4<1>;
+L_0000019509ba9b80 .functor OR 1, L_0000019509ba9a30, L_0000019509ba9950, C4<0>, C4<0>;
+v0000019509ccdef0_0 .net "A", 0 0, v0000019509ba7650_0;  1 drivers
+v0000019509cc75c0_0 .net "B", 0 0, v0000019509ba76f0_0;  1 drivers
+v0000019509ba7330_0 .net "C", 0 0, v0000019509ba7790_0;  1 drivers
+v0000019509ba73d0_0 .net "F", 0 0, L_0000019509ba9b80;  alias, 1 drivers
+v0000019509ba7470_0 .net "g1", 0 0, L_0000019509ba9b10;  1 drivers
+v0000019509ba7510_0 .net "g2", 0 0, L_0000019509ba9a30;  1 drivers
+v0000019509ba75b0_0 .net "g3", 0 0, L_0000019509ba9950;  1 drivers
+    .scope S_0000019509ccdbd0;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "p2_struct.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000019509ccdbd0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %cassign/vec4 v0000019509ba7650_0;
+    %pushi/vec4 0, 0, 1;
+    %cassign/vec4 v0000019509ba76f0_0;
+    %pushi/vec4 0, 0, 1;
+    %cassign/vec4 v0000019509ba7790_0;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %cassign/vec4 v0000019509ba76f0_0;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %cassign/vec4 v0000019509ba7650_0;
+    %delay 1000, 0;
+    %pushi/vec4 0, 0, 1;
+    %cassign/vec4 v0000019509ba76f0_0;
+    %delay 1000, 0;
+    %pushi/vec4 0, 0, 1;
+    %cassign/vec4 v0000019509ba7650_0;
+    %pushi/vec4 1, 0, 1;
+    %cassign/vec4 v0000019509ba7790_0;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %cassign/vec4 v0000019509ba76f0_0;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %cassign/vec4 v0000019509ba7650_0;
+    %delay 1000, 0;
+    %pushi/vec4 0, 0, 1;
+    %cassign/vec4 v0000019509ba76f0_0;
+    %delay 1000, 0;
+    %vpi_call 2 33 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "p2_struct_tb.v";
+    "p2_struct.v";
