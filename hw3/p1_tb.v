@@ -43,6 +43,6 @@ module p1_tb;
         A1 = 1;
         EN = 1;
         #10
-        $finish
+        $finish;
     end
 endmodule
