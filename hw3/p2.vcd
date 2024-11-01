@@ -1,0 +1,93 @@
+$date
+	Fri Nov 01 18:48:41 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module p2_tb $end
+$var wire 1 ! S3 $end
+$var wire 1 " S2 $end
+$var wire 1 # S1 $end
+$var wire 1 $ S0 $end
+$var wire 1 % C4 $end
+$var wire 1 & C3 $end
+$var wire 1 ' C2 $end
+$var wire 1 ( C1 $end
+$var reg 1 ) A0 $end
+$var reg 1 * A1 $end
+$var reg 1 + A2 $end
+$var reg 1 , A3 $end
+$var reg 1 - B0 $end
+$var reg 1 . B1 $end
+$var reg 1 / B2 $end
+$var reg 1 0 B3 $end
+$var reg 1 1 C0 $end
+$scope module ADD0 $end
+$var wire 1 ) A $end
+$var wire 1 - B $end
+$var wire 1 1 CIN $end
+$var wire 1 ( COUT $end
+$var wire 1 $ S $end
+$upscope $end
+$scope module ADD1 $end
+$var wire 1 * A $end
+$var wire 1 . B $end
+$var wire 1 ( CIN $end
+$var wire 1 ' COUT $end
+$var wire 1 # S $end
+$upscope $end
+$scope module ADD2 $end
+$var wire 1 + A $end
+$var wire 1 / B $end
+$var wire 1 ' CIN $end
+$var wire 1 & COUT $end
+$var wire 1 " S $end
+$upscope $end
+$scope module ADD3 $end
+$var wire 1 , A $end
+$var wire 1 0 B $end
+$var wire 1 & CIN $end
+$var wire 1 % COUT $end
+$var wire 1 ! S $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+01
+10
+0/
+1.
+1-
+1,
+0+
+1*
+0)
+0(
+1'
+0&
+1%
+1$
+0#
+1"
+0!
+$end
+#10
+1#
+1(
+0$
+11
+#20
+1!
+0%
+00
+#30
+0#
+0*
+#40
