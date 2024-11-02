@@ -16,8 +16,11 @@ module p5_tb;
         b = 4;
         #10
         a = 7;
-        b = 7;
         #10
+        a = 7;
+        b = 5;
+        #10
+
         $finish;
     end
 endmodule
