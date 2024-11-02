@@ -1,0 +1,54 @@
+#! /mingw64/bin/vvp
+:ivl_version "13.0 (devel)" "(s20221226-556-gd8c3c51ab)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\system.vpi";
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\Users\aewal\iverilog\msys2\pkg\MINGW-~1\mingw64\lib\ivl\va_math.vpi";
+S_00000171241fd2d0 .scope module, "p5_tb" "p5_tb" 2 3;
+ .timescale -12 -12;
+v0000017124395380_0 .var "a", 2 0;
+v0000017124395420_0 .var "b", 2 0;
+v00000171243954c0_0 .net "f", 5 0, L_0000017124396370;  1 drivers
+S_00000171241fd460 .scope module, "mult" "p5" 2 8, 3 3 0, S_00000171241fd2d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 3 "a";
+    .port_info 1 /INPUT 3 "b";
+    .port_info 2 /OUTPUT 6 "f";
+v00000171241fd5f0_0 .net *"_ivl_0", 5 0, L_0000017124395560;  1 drivers
+L_00000171243db818 .functor BUFT 1, C4<000>, C4<0>, C4<0>, C4<0>;
+v00000171241f75a0_0 .net *"_ivl_3", 2 0, L_00000171243db818;  1 drivers
+v00000171241fd690_0 .net *"_ivl_4", 5 0, L_0000017124395d30;  1 drivers
+L_00000171243db860 .functor BUFT 1, C4<000>, C4<0>, C4<0>, C4<0>;
+v00000171241fbdf0_0 .net *"_ivl_7", 2 0, L_00000171243db860;  1 drivers
+v00000171241fbe90_0 .net "a", 2 0, v0000017124395380_0;  1 drivers
+v00000171241fbf30_0 .net "b", 2 0, v0000017124395420_0;  1 drivers
+v00000171243952e0_0 .net "f", 5 0, L_0000017124396370;  alias, 1 drivers
+L_0000017124395560 .concat [ 3 3 0 0], v0000017124395380_0, L_00000171243db818;
+L_0000017124395d30 .concat [ 3 3 0 0], v0000017124395420_0, L_00000171243db860;
+L_0000017124396370 .arith/mult 6, L_0000017124395560, L_0000017124395d30;
+    .scope S_00000171241fd2d0;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "p5.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000171241fd2d0 {0 0 0};
+    %pushi/vec4 3, 0, 3;
+    %store/vec4 v0000017124395380_0, 0, 3;
+    %pushi/vec4 4, 0, 3;
+    %store/vec4 v0000017124395420_0, 0, 3;
+    %delay 10, 0;
+    %pushi/vec4 7, 0, 3;
+    %store/vec4 v0000017124395380_0, 0, 3;
+    %pushi/vec4 7, 0, 3;
+    %store/vec4 v0000017124395420_0, 0, 3;
+    %delay 10, 0;
+    %vpi_call 2 21 "$finish" {0 0 0};
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "p5_tb.v";
+    "p5.v";
