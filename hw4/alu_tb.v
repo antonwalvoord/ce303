@@ -17,9 +17,13 @@ module alu_tb;
         b = 5;
         F = 0;
         #10
+        a = 250;
+        b = 6;
+        #10
         F = 1;
         #10
         a = 6;
+        b = 250;
         #10
         F = 2;
         #10
@@ -33,8 +37,7 @@ module alu_tb;
         #10
         F = 7;
         #10
-        F = 0;
-        #10
+
         $finish;
     end
 endmodule
