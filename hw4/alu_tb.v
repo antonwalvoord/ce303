@@ -33,6 +33,8 @@ module alu_tb;
         #10
         F = 7;
         #10
+        F = 0;
+        #10
         $finish;
     end
 endmodule
