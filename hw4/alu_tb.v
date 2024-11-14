@@ -1,4 +1,4 @@
-`timescale 1ps/1ps
+`timescale 1ns/10ps
 
 module alu_tb;
     reg [7:0] a,b;
