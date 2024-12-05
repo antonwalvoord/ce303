@@ -3,3 +3,4 @@
 // Do not modify this file
 
 s1::(05Dec2024:07:48:09):( xrun -64bit -gui -access r mac_syn.v ../mac_tb.v -v /vol/ece303/genus_tutorial/NangateOpenCellLibrary.v )
+s2::(05Dec2024:08:10:40):( xrun -64bit -gui -access r mac_syn.v ../mac_tb.v -v /vol/ece303/genus_tutorial/NangateOpenCellLibrary.v )

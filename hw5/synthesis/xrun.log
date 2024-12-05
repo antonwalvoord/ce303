@@ -1,5 +1,5 @@
 xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	18.09-s011: Started on Dec 05, 2024 at 07:48:08 CST
+TOOL:	xrun(64)	18.09-s011: Started on Dec 05, 2024 at 08:10:40 CST
 xrun
 	-64bit
 	-gui
@@ -7,77 +7,15 @@ xrun
 	mac_syn.v
 	../mac_tb.v
 	-v /vol/ece303/genus_tutorial/NangateOpenCellLibrary.v
-file: mac_syn.v
-	module worklib.mac:v
-		errors: 0, warnings: 0
-file: ../mac_tb.v
-	module worklib.mac_tb:v
-		errors: 0, warnings: 0
-file: /vol/ece303/genus_tutorial/NangateOpenCellLibrary.v
-	module NangateOpenCellLibrary.AND2_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.AND4_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.AOI21_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.AOI22_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.DFFR_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.FA_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.HA_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.INV_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.NAND2_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.NOR2_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.NOR3_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.OAI21_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.OAI22_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.OR2_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.OR3_X1:v
-		errors: 0, warnings: 0
-	module NangateOpenCellLibrary.XNOR2_X1:v
-		errors: 0, warnings: 0
-	primitive NangateOpenCellLibrary.ng_xbuf:v
-		errors: 0, warnings: 0
-file: /vol/ece303/genus_tutorial/NangateOpenCellLibrary.v
-	primitive NangateOpenCellLibrary.seq_DFFR_X1:v
-		errors: 0, warnings: 0
+Recompiling... reason: file './mac_syn.v' is newer than expected.
+	expected: Thu Dec  5 07:47:05 2024
+	actual:   Thu Dec  5 08:10:12 2024
 		Caching library 'NangateOpenCellLibrary' ....... Done
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
 		mac_tb
 	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.mac:v <0x7c3a847e>
-			streams:   0, words:     0
-		worklib.mac_tb:v <0x645005ab>
-			streams:   1, words:  2178
-		NangateOpenCellLibrary.OAI22_X1:v <0x78125743>
-			streams:   0, words:     0
-		NangateOpenCellLibrary.AOI22_X1:v <0x53f3b4dd>
-			streams:   0, words:     0
-		NangateOpenCellLibrary.HA_X1:v <0x02b93035>
-			streams:   0, words:     0
-		NangateOpenCellLibrary.FA_X1:v <0x46e82838>
-			streams:   0, words:     0
-		NangateOpenCellLibrary.AOI21_X1:v <0x5c651a3c>
-			streams:   0, words:     0
-		NangateOpenCellLibrary.OAI21_X1:v <0x7208860d>
-			streams:   0, words:     0
-		NangateOpenCellLibrary.XNOR2_X1:v <0x0fe22dee>
-			streams:   0, words:     0
-		NangateOpenCellLibrary.DFFR_X1:v <0x7b00d99a>
-			streams:   0, words:     0
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -101,11 +39,18 @@ xcelium>
 xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
 xcelium> database -open waves -into waves.shm -default
 Created default SHM database waves
-xcelium> probe -create -shm mac_tb.IN mac_tb.OUT mac_tb.W mac_tb.clk mac_tb.rstb
+xcelium> probe -create -shm mac_tb.mymac.A mac_tb.mymac.B mac_tb.mymac.IN mac_tb.mymac.OUT mac_tb.mymac.UNCONNECTED mac_tb.mymac.UNCONNECTED0 mac_tb.mymac.UNCONNECTED1 mac_tb.mymac.UNCONNECTED2 mac_tb.mymac.UNCONNECTED3 mac_tb.mymac.UNCONNECTED4 mac_tb.mymac.UNCONNECTED5 mac_tb.mymac.UNCONNECTED6 mac_tb.mymac.UNCONNECTED7 mac_tb.mymac.UNCONNECTED8 mac_tb.mymac.UNCONNECTED9 mac_tb.mymac.UNCONNECTED10 mac_tb.mymac.UNCONNECTED11 mac_tb.mymac.W mac_tb.mymac.clk mac_tb.mymac.counter mac_tb.mymac.n_0 mac_tb.mymac.n_1 mac_tb.mymac.n_2 mac_tb.mymac.n_3 mac_tb.mymac.n_4 mac_tb.mymac.n_5 mac_tb.mymac.n_6 mac_tb.mymac.n_7 mac_tb.mymac.n_8 mac_tb.mymac.n_9 mac_tb.mymac.n_10 mac_tb.mymac.n_11 mac_tb.mymac.n_12 mac_tb.mymac.n_13 mac_tb.mymac.n_14 mac_tb.mymac.n_15 mac_tb.mymac.n_16 mac_tb.mymac.n_17 mac_tb.mymac.n_18 mac_tb.mymac.n_19 mac_tb.mymac.n_20 mac_tb.mymac.n_21 mac_tb.mymac.n_22 mac_tb.mymac.n_23 mac_tb.mymac.n_24 mac_tb.mymac.n_25 mac_tb.mymac.n_26 mac_tb.mymac.n_27 mac_tb.mymac.n_28 mac_tb.mymac.n_29 mac_tb.mymac.n_30 mac_tb.mymac.n_31 mac_tb.mymac.n_32 mac_tb.mymac.n_33 mac_tb.mymac.n_34 mac_tb.mymac.n_35 mac_tb.mymac.n_36 mac_tb.mymac.n_38 mac_tb.mymac.n_39 mac_tb.mymac.n_40 mac_tb.mymac.n_42 mac_tb.mymac.n_43 mac_tb.mymac.n_44 mac_tb.mymac.n_45 mac_tb.mymac.n_46 mac_tb.mymac.n_47 mac_tb.mymac.n_48 mac_tb.mymac.n_49 mac_tb.mymac.n_50 mac_tb.mymac.n_51 mac_tb.mymac.n_52 mac_tb.mymac.n_53 mac_tb.mymac.n_54 mac_tb.mymac.n_55 mac_tb.mymac.n_56 mac_tb.mymac.n_57 mac_tb.mymac.n_58 mac_tb.mymac.n_59 mac_tb.mymac.n_60 mac_tb.mymac.n_61 mac_tb.mymac.n_62 mac_tb.mymac.n_63 mac_tb.mymac.n_64 mac_tb.mymac.n_65 mac_tb.mymac.n_66 mac_tb.mymac.n_67 mac_tb.mymac.n_68 mac_tb.mymac.n_69 mac_tb.mymac.n_70 mac_tb.mymac.n_71 mac_tb.mymac.n_72 mac_tb.mymac.n_73 mac_tb.mymac.n_74 mac_tb.mymac.n_75 mac_tb.mymac.n_76 mac_tb.mymac.n_77 mac_tb.mymac.n_78 mac_tb.mymac.n_79 mac_tb.mymac.n_80 mac_tb.mymac.n_81 mac_tb.mymac.n_82 mac_tb.mymac.n_83 mac_tb.mymac.n_84 mac_tb.mymac.n_85 mac_tb.mymac.n_86 mac_tb.mymac.n_87 mac_tb.mymac.n_88 mac_tb.mymac.n_89 mac_tb.mymac.n_90 mac_tb.mymac.n_91 mac_tb.mymac.n_92 mac_tb.mymac.n_93 mac_tb.mymac.n_94 mac_tb.mymac.n_95 mac_tb.mymac.n_96 mac_tb.mymac.n_97 mac_tb.mymac.n_98 mac_tb.mymac.n_99 mac_tb.mymac.n_100 mac_tb.mymac.n_101 mac_tb.mymac.n_102 mac_tb.mymac.n_103 mac_tb.mymac.n_104 mac_tb.mymac.n_105 mac_tb.mymac.n_106 mac_tb.mymac.n_107 mac_tb.mymac.n_108 mac_tb.mymac.n_109 mac_tb.mymac.n_110 mac_tb.mymac.n_111 mac_tb.mymac.n_112 mac_tb.mymac.n_113 mac_tb.mymac.n_114 mac_tb.mymac.n_115 mac_tb.mymac.n_116 mac_tb.mymac.n_117 mac_tb.mymac.n_118 mac_tb.mymac.n_119 mac_tb.mymac.n_120 mac_tb.mymac.n_121 mac_tb.mymac.n_122 mac_tb.mymac.n_123 mac_tb.mymac.n_124 mac_tb.mymac.n_125 mac_tb.mymac.n_126 mac_tb.mymac.n_127 mac_tb.mymac.n_128 mac_tb.mymac.n_129 mac_tb.mymac.n_130 mac_tb.mymac.n_131 mac_tb.mymac.n_132 mac_tb.mymac.n_133 mac_tb.mymac.n_134 mac_tb.mymac.n_135 mac_tb.mymac.n_136 mac_tb.mymac.n_137 mac_tb.mymac.n_138 mac_tb.mymac.n_139 mac_tb.mymac.n_140 mac_tb.mymac.n_141 mac_tb.mymac.n_142 mac_tb.mymac.n_143 mac_tb.mymac.rstb
 Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 21 NS + 0
+../mac_tb.v:30         $finish;
+xcelium> probe -create -shm mac_tb.IN mac_tb.OUT mac_tb.W mac_tb.clk mac_tb.rstb
+Created probe 2
+xcelium> reset
+Loaded snapshot worklib.mac_tb:v
 xcelium> run
 Simulation complete via $finish(1) at time 21 NS + 0
 ../mac_tb.v:30         $finish;
 xcelium> ^C
 xcelium> exit
-TOOL:	xrun(64)	18.09-s011: Exiting on Dec 05, 2024 at 07:48:45 CST  (total: 00:00:37)
+TOOL:	xrun(64)	18.09-s011: Exiting on Dec 05, 2024 at 08:12:57 CST  (total: 00:02:17)
