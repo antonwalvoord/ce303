@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-64bit
+-gui
+-access
+r
+mac_syn.v
+../mac_tb.v
+-v
+/vol/ece303/genus_tutorial/NangateOpenCellLibrary.v
