@@ -12,33 +12,29 @@ reg [3:0] counter;
 
 always @(posedge clk) begin
 
-    if(counter == 9) begin
-        assign counter = 0;
-        assign OUT = B;
-        assign B = 0;
-        assign A = IN*W;
-    end else if(counter < 9) begin
-        assign counter = counter + 1;
-        assign A = IN*W;
-        assign B = A+B;
-    end else begin
-        assign counter = 0;
-        assign OUT = 0;
-        assign B = 0;
-        assign A = 0;
-    end
-
-end
-
-always @(rstb) begin
-
     if(~rstb) begin
-        counter <= 0;
-        OUT <= 0;
-        B <= 0;
-        A <= 0;
+        counter = 0;
+        OUT = 0;
+        B = 0;
+        A = 0;
     end
-end
 
+    if(counter == 9) begin
+        counter = 0;
+        OUT = B;
+        B = 0;
+        A = IN*W;
+    end else if(counter < 9) begin
+        counter = counter + 1;
+        A = IN*W;
+        B = A+B;
+    end else begin
+        counter = 0;
+        OUT = 0;
+        B = 0;
+        A = 0;
+    end
+
+end
 
 endmodule
