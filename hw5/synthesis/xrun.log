@@ -1,0 +1,111 @@
+xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.09-s011: Started on Dec 05, 2024 at 07:48:08 CST
+xrun
+	-64bit
+	-gui
+	-access r
+	mac_syn.v
+	../mac_tb.v
+	-v /vol/ece303/genus_tutorial/NangateOpenCellLibrary.v
+file: mac_syn.v
+	module worklib.mac:v
+		errors: 0, warnings: 0
+file: ../mac_tb.v
+	module worklib.mac_tb:v
+		errors: 0, warnings: 0
+file: /vol/ece303/genus_tutorial/NangateOpenCellLibrary.v
+	module NangateOpenCellLibrary.AND2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AND4_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AOI21_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AOI22_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.DFFR_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.FA_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.HA_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.INV_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.NAND2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.NOR2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.NOR3_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OAI21_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OAI22_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OR2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OR3_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.XNOR2_X1:v
+		errors: 0, warnings: 0
+	primitive NangateOpenCellLibrary.ng_xbuf:v
+		errors: 0, warnings: 0
+file: /vol/ece303/genus_tutorial/NangateOpenCellLibrary.v
+	primitive NangateOpenCellLibrary.seq_DFFR_X1:v
+		errors: 0, warnings: 0
+		Caching library 'NangateOpenCellLibrary' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		mac_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mac:v <0x7c3a847e>
+			streams:   0, words:     0
+		worklib.mac_tb:v <0x645005ab>
+			streams:   1, words:  2178
+		NangateOpenCellLibrary.OAI22_X1:v <0x78125743>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.AOI22_X1:v <0x53f3b4dd>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.HA_X1:v <0x02b93035>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.FA_X1:v <0x46e82838>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.AOI21_X1:v <0x5c651a3c>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.OAI21_X1:v <0x7208860d>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.XNOR2_X1:v <0x0fe22dee>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.DFFR_X1:v <0x7b00d99a>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:               141      18
+		UDPs:                   99       2
+		Primitives:            458       5
+		Timing outputs:        188      19
+		Registers:              37       6
+		Scalar wires:          258       -
+		Expanded wires:          8       2
+		Always blocks:           1       1
+		Cont. assignments:       0       1
+		Timing checks:         297      35
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.mac_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm mac_tb.IN mac_tb.OUT mac_tb.W mac_tb.clk mac_tb.rstb
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 21 NS + 0
+../mac_tb.v:30         $finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	18.09-s011: Exiting on Dec 05, 2024 at 07:48:45 CST  (total: 00:00:37)

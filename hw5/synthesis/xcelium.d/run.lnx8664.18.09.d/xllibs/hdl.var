@@ -1,0 +1,3 @@
+define LIB_MAP ( $LIB_MAP \
+, ../../../../../../../../vol/ece303/genus_tutorial/NangateOpenCellLibrary.v => NangateOpenCellLibrary \
+)
