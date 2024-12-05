@@ -12,77 +12,21 @@ module mac_tb;
         $dumpfile("mac.vcd");
         $dumpvars(0,mac_tb);
 
-        IN = 3;
-        W = 2;
-        clk = 1;
+        IN = 0;
+        W = 0;
         rstb = 1;
-        #0.5
-        IN = 6;
-        W = 2;
-        clk = 0;
-        rstb = 1;
-        #0.5
         clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        W = 4;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        rstb = 0;
-        #0.5
-        clk = 1;
-        rstb = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
-        clk = 0;
-        #0.5
-        clk = 1;
-        #0.5
+        
+        repeat(21) begin
+            #0.5
+            clk = 0;
+            
+            #0.5
+            clk = 1;
+            IN = IN + 1;
+            W = W + 2;
+        end
+
         $finish;
     end
 
