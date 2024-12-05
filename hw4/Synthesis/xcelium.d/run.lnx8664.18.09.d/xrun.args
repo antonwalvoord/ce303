@@ -5,6 +5,8 @@
 -64bit
 -gui
 -access
--l
-../alu.v
+r
+-v
+NangateOpenCellLibrary.v
+alu_syn.v
 ../alu_tb.v

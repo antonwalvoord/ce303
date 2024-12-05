@@ -172,7 +172,7 @@
 "is_retimed":"false",
 "lp_clock_gating_style":"latch",
 "pi_commit_done":"false",
-"seq_reason_deleted":"{A unloaded} {{B_reg[0]36} {{constant 0}}} {{B_reg[1]37} {{constant 0}}} {{B_reg[2]38} {{constant 0}}} {{B_reg[3]39} {{constant 0}}} {{B_reg[4]40} {{constant 0}}} {{B_reg[5]41} {{constant 0}}} {{B_reg[6]42} {{constant 0}}} {{B_reg[7]43} {{constant 0}}} {{B_reg[8]44} {{constant 0}}} {{B_reg[9]45} {{constant 0}}} {{B_reg[10]46} {{constant 0}}} {{OUT_reg[0]24} {{constant 0}}} {{OUT_reg[1]25} {{constant 0}}} {{OUT_reg[2]26} {{constant 0}}} {{OUT_reg[3]27} {{constant 0}}} {{OUT_reg[4]28} {{constant 0}}} {{OUT_reg[5]29} {{constant 0}}} {{OUT_reg[6]30} {{constant 0}}} {{OUT_reg[7]31} {{constant 0}}} {{OUT_reg[8]32} {{constant 0}}} {{OUT_reg[9]33} {{constant 0}}} {{OUT_reg[10]34} {{constant 0}}} {{OUT_reg[11]35} {{constant 0}}} {{counter_reg[0]47} {{constant 0}}} {{counter_reg[1]48} {{constant 0}}} {{counter_reg[2]49} {{constant 0}}} {{counter_reg[3]50} {{constant 0}}}",
+"seq_reason_deleted":"{{OUT_reg[11]} {{merged with OUT_reg[10]}}}",
 "state":"mapped",
 "obsolete_state":"mapped",
 "has_dp_shared_gint":"false",
@@ -231,7 +231,25 @@
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
+"object":"/designs/mac/instances_seq/A_reg[6]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
+"object":"/designs/mac/instances_seq/A_reg[5]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
 "object":"/designs/mac/instances_seq/B_reg[2]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
+"object":"/designs/mac/instances_seq/A_reg[4]",
 "type":"instance"},
 
 {"sequential":"true",
@@ -243,7 +261,31 @@
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
+"object":"/designs/mac/instances_seq/A_reg[3]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
+"object":"/designs/mac/instances_seq/B_reg[0]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
+"object":"/designs/mac/instances_seq/A_reg[2]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
 "object":"/designs/mac/instances_seq/counter_reg[3]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
+"object":"/designs/mac/instances_seq/OUT_reg[0]",
 "type":"instance"},
 
 {"sequential":"true",
@@ -255,7 +297,7 @@
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
-"object":"/designs/mac/instances_seq/OUT_reg[8]",
+"object":"/designs/mac/instances_seq/OUT_reg[9]",
 "type":"instance"},
 
 {"sequential":"true",
@@ -279,6 +321,24 @@
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
+"object":"/designs/mac/instances_seq/A_reg[0]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
+"object":"/designs/mac/instances_seq/A_reg[1]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
+"object":"/designs/mac/instances_seq/OUT_reg[6]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
 "object":"/designs/mac/instances_seq/OUT_reg[5]",
 "type":"instance"},
 
@@ -291,43 +351,19 @@
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
-"object":"/designs/mac/instances_seq/OUT_reg[0]",
-"type":"instance"},
-
-{"sequential":"true",
-"gint_phase_inversion":"false",
-"latch":"false",
-"object":"/designs/mac/instances_seq/OUT_reg[6]",
-"type":"instance"},
-
-{"sequential":"true",
-"gint_phase_inversion":"false",
-"latch":"false",
 "object":"/designs/mac/instances_seq/OUT_reg[2]",
 "type":"instance"},
 
 {"sequential":"true",
 "gint_phase_inversion":"false",
 "latch":"false",
+"object":"/designs/mac/instances_seq/OUT_reg[8]",
+"type":"instance"},
+
+{"sequential":"true",
+"gint_phase_inversion":"false",
+"latch":"false",
 "object":"/designs/mac/instances_seq/OUT_reg[10]",
-"type":"instance"},
-
-{"sequential":"true",
-"gint_phase_inversion":"false",
-"latch":"false",
-"object":"/designs/mac/instances_seq/OUT_reg[11]",
-"type":"instance"},
-
-{"sequential":"true",
-"gint_phase_inversion":"false",
-"latch":"false",
-"object":"/designs/mac/instances_seq/B_reg[0]",
-"type":"instance"},
-
-{"sequential":"true",
-"gint_phase_inversion":"false",
-"latch":"false",
-"object":"/designs/mac/instances_seq/OUT_reg[9]",
 "type":"instance"},
 
 {"sequential":"true",
@@ -343,14 +379,14 @@
 "type":"instance"},
 
 {"index": "1", 
- "date": "Thu Dec 05 05:45:55 CST 2024",
- "seconds": 1733399155.086072,
+ "date": "Thu Dec 05 07:25:22 CST 2024",
+ "seconds": 1733405122.9635909,
  "netlist": "fv/mac/fv_map.v.gz", 
  "design_name": "mac", 
  "synth_workdir": "/home/xpa7059/ce303/hw5/synthesis", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.46108 
+ "write_verif_file_runtime": 0.46860399999999997 
  }
 ]

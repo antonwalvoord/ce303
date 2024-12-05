@@ -8,3 +8,4 @@ s7(14Nov2024:06:14:41):  xrun -64bit -gui -access -r ../alu.v ../alu_tb.v
 s8(14Nov2024:06:18:29):  xrun -64bit -gui -acc 
 s9(14Nov2024:06:19:10):  xrun -64bit -gui -access -l ../alu.v ../alu_tb.v 
 s10(14Nov2024:06:19:28):  xrun -64bit -gui -access -l ../alu.v ../alu_tb.v 
+s11(05Dec2024:07:01:07):  xrun -64bit -gui -access r -v NangateOpenCellLibrary.v alu_syn.v ../alu_tb.v 

@@ -1,11 +1,132 @@
 xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	18.09-s011: Started on Nov 14, 2024 at 06:19:28 CST
+TOOL:	xrun(64)	18.09-s011: Started on Dec 05, 2024 at 07:01:06 CST
 xrun
 	-64bit
 	-gui
-	-access -l
-	../alu.v
+	-access r
+	-v NangateOpenCellLibrary.v
+	alu_syn.v
 	../alu_tb.v
-xmelab: *F,ILACC: illegal ACCESS specification (-l).
-xrun: *E,ELBERR: Error during elaboration (status 2), exiting.
-TOOL:	xrun(64)	18.09-s011: Exiting on Nov 14, 2024 at 06:19:29 CST  (total: 00:00:01)
+file: alu_syn.v
+	module worklib.alu:v
+		errors: 0, warnings: 0
+file: ../alu_tb.v
+	module worklib.alu_tb:v
+		errors: 0, warnings: 0
+file: NangateOpenCellLibrary.v
+	module NangateOpenCellLibrary.AND2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AND3_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AOI211_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AOI21_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AOI221_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AOI222_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.AOI22_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.FA_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.INV_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.MUX2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.NAND2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.NAND3_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.NOR2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.NOR3_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.NOR4_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OAI211_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OAI21_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OAI221_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OAI22_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.OR2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.XNOR2_X1:v
+		errors: 0, warnings: 0
+	module NangateOpenCellLibrary.XOR2_X1:v
+		errors: 0, warnings: 0
+		Caching library 'NangateOpenCellLibrary' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		alu_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu_tb:v <0x4c35c6f4>
+			streams:   1, words:  5047
+		NangateOpenCellLibrary.XOR2_X1:v <0x16728fdb>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.OAI22_X1:v <0x75dab29a>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.AOI21_X1:v <0x36583e03>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.AOI22_X1:v <0x4cff9800>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.AOI222_X1:v <0x245ab591>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.AOI221_X1:v <0x4746a60f>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.OAI221_X1:v <0x59fe5b7e>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.AOI211_X1:v <0x2ac87811>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.OAI21_X1:v <0x4d49ae77>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.FA_X1:v <0x45beeb96>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.XNOR2_X1:v <0x1eecc32f>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.MUX2_X1:v <0x2722691b>
+			streams:   0, words:     0
+		NangateOpenCellLibrary.OAI211_X1:v <0x73c4a26e>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                106      24
+		Primitives:             301       4
+		Timing outputs:         111      24
+		Registers:                3       3
+		Scalar wires:           111       -
+		Expanded wires:          19       3
+		Always blocks:            1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.alu_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm alu_tb.Cout alu_tb.F alu_tb.Q alu_tb.a alu_tb.b
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 100 NS + 0
+../alu_tb.v:41         $finish;
+xcelium> probe -create -shm alu_tb.myalu.Cout alu_tb.myalu.F alu_tb.myalu.Q alu_tb.myalu.UNCONNECTED alu_tb.myalu.a alu_tb.myalu.b alu_tb.myalu.n_0 alu_tb.myalu.n_1 alu_tb.myalu.n_2 alu_tb.myalu.n_3 alu_tb.myalu.n_4 alu_tb.myalu.n_5 alu_tb.myalu.n_6 alu_tb.myalu.n_7 alu_tb.myalu.n_8 alu_tb.myalu.n_9 alu_tb.myalu.n_10 alu_tb.myalu.n_11 alu_tb.myalu.n_12 alu_tb.myalu.n_13 alu_tb.myalu.n_14 alu_tb.myalu.n_15 alu_tb.myalu.n_16 alu_tb.myalu.n_17 alu_tb.myalu.n_18 alu_tb.myalu.n_19 alu_tb.myalu.n_20 alu_tb.myalu.n_21 alu_tb.myalu.n_22 alu_tb.myalu.n_23 alu_tb.myalu.n_24 alu_tb.myalu.n_25 alu_tb.myalu.n_26 alu_tb.myalu.n_27 alu_tb.myalu.n_28 alu_tb.myalu.n_29 alu_tb.myalu.n_30 alu_tb.myalu.n_31 alu_tb.myalu.n_32 alu_tb.myalu.n_33 alu_tb.myalu.n_34 alu_tb.myalu.n_35 alu_tb.myalu.n_36 alu_tb.myalu.n_37 alu_tb.myalu.n_38 alu_tb.myalu.n_39 alu_tb.myalu.n_40 alu_tb.myalu.n_41 alu_tb.myalu.n_42 alu_tb.myalu.n_43 alu_tb.myalu.n_44 alu_tb.myalu.n_45 alu_tb.myalu.n_46 alu_tb.myalu.n_47 alu_tb.myalu.n_48 alu_tb.myalu.n_49 alu_tb.myalu.n_50 alu_tb.myalu.n_51 alu_tb.myalu.n_52 alu_tb.myalu.n_53 alu_tb.myalu.n_54 alu_tb.myalu.n_56 alu_tb.myalu.n_58 alu_tb.myalu.n_59 alu_tb.myalu.n_60 alu_tb.myalu.n_61 alu_tb.myalu.n_62 alu_tb.myalu.n_63 alu_tb.myalu.n_64 alu_tb.myalu.n_65 alu_tb.myalu.n_66 alu_tb.myalu.n_67 alu_tb.myalu.n_68 alu_tb.myalu.n_69 alu_tb.myalu.n_70 alu_tb.myalu.n_71 alu_tb.myalu.n_72 alu_tb.myalu.n_73 alu_tb.myalu.n_74 alu_tb.myalu.n_75 alu_tb.myalu.n_76 alu_tb.myalu.n_77 alu_tb.myalu.n_78 alu_tb.myalu.n_79 alu_tb.myalu.n_81 alu_tb.myalu.n_83 alu_tb.myalu.n_84 alu_tb.myalu.n_85 alu_tb.myalu.n_87 alu_tb.myalu.n_88 alu_tb.myalu.n_89 alu_tb.myalu.n_91 alu_tb.myalu.n_93 alu_tb.myalu.n_94 alu_tb.myalu.n_95 alu_tb.myalu.n_96 alu_tb.myalu.n_98 alu_tb.myalu.n_100 alu_tb.myalu.n_102 alu_tb.myalu.n_103 alu_tb.myalu.n_104 alu_tb.myalu.n_106 alu_tb.myalu.n_107 alu_tb.myalu.n_108 alu_tb.myalu.n_109 alu_tb.myalu.n_111 alu_tb.myalu.n_132
+Created probe 2
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> reset
+Loaded snapshot worklib.alu_tb:v
+xcelium> run
+Simulation complete via $finish(1) at time 100 NS + 0
+../alu_tb.v:41         $finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	18.09-s011: Exiting on Dec 05, 2024 at 07:03:33 CST  (total: 00:02:27)

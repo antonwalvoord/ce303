@@ -5,7 +5,9 @@
 -XLMODE
 ./xcelium.d/run.lnx8664.18.09.d
 -RUNMODE
-../alu.v
+-VFILE
+NangateOpenCellLibrary.v
+alu_syn.v
 ../alu_tb.v
 -CDSLIB
 ./xcelium.d/run.lnx8664.18.09.d/cdsrun.lib
