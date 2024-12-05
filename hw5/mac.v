@@ -1,8 +1,7 @@
 `timescale 1ns/1ps
 
 module mac(
-    input reg signed [3:0] IN,
-    input reg signed [3:0] W, //should be signed
+    input signed [3:0] IN,W, //should be signed
     input clk, rstb,
     output reg signed [11:0] OUT //should be signed
 );
