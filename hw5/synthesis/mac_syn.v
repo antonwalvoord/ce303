@@ -3,6 +3,7 @@
 // Generated on: Dec  5 2024 05:46:52 CST (Dec  5 2024 11:46:52 UTC)
 
 // Verification Directory fv/mac 
+`timescale 1ns/1ps
 
 module mac(IN, W, clk, rstb, OUT);
   input [3:0] IN, W;
