@@ -343,14 +343,14 @@
 "type":"instance"},
 
 {"index": "1", 
- "date": "Thu Dec 05 04:53:23 CST 2024",
- "seconds": 1733396003.955415,
+ "date": "Thu Dec 05 05:25:46 CST 2024",
+ "seconds": 1733397946.179519,
  "netlist": "fv/mac/fv_map.v.gz", 
  "design_name": "mac", 
  "synth_workdir": "/home/xpa7059/ce303/hw5/synthesis", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.46424699999999997 
+ "write_verif_file_runtime": 0.476305 
  }
 ]
