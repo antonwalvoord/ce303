@@ -22,10 +22,10 @@ always @(posedge clk) begin
         A = IN*W;
         B = A+B;
     end else begin
-        counter <= 0;
-        OUT <= 0;
-        B <= 0;
-        A <= 0;
+        counter = 0;
+        OUT = 0;
+        B = 0;
+        A = 0;
     end
 
 end
