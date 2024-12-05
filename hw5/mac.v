@@ -3,7 +3,7 @@
 module mac(
     input signed [3:0] IN,W, //should be signed
     input clk, rstb,
-    output signed [11:0] OUT //should be signed
+    output reg signed [11:0] OUT //should be signed
 );
 
 reg signed [6:0] A; //should be signed
@@ -33,10 +33,10 @@ end
 always @(rstb) begin
 
     if(~rstb) begin
-        assign counter <= 0;
-        assign OUT <= 0;
-        assign B <= 0;
-        assign A <= 0;
+        counter <= 0;
+        OUT <= 0;
+        B <= 0;
+        A <= 0;
     end
 end
 
