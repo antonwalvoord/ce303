@@ -1,0 +1,151 @@
+$date
+	Thu Dec 05 02:02:48 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mac_tb $end
+$var wire 12 ! OUT [11:0] $end
+$var reg 4 " IN [3:0] $end
+$var reg 4 # W [3:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % rstb $end
+$scope module mymac $end
+$var wire 4 & IN [3:0] $end
+$var wire 4 ' W [3:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % rstb $end
+$var reg 7 ( A [6:0] $end
+$var reg 11 ) B [10:0] $end
+$var reg 12 * OUT [11:0] $end
+$var reg 4 + counter [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 +
+bx *
+b110 )
+b110 (
+b10 '
+b11 &
+1%
+1$
+b10 #
+b11 "
+bx !
+$end
+#500
+0$
+b110 "
+b110 &
+#1000
+b10010 )
+b1100 (
+b10 +
+1$
+#1500
+0$
+#2000
+b11110 )
+b11 +
+1$
+#2500
+0$
+#3000
+b101010 )
+b100 +
+1$
+#3500
+b100 #
+b100 '
+0$
+#4000
+b1000010 )
+b11000 (
+b101 +
+1$
+#4500
+0$
+#5000
+b1011010 )
+b110 +
+1$
+#5500
+0$
+#6000
+b1110010 )
+b111 +
+1$
+#6500
+0$
+#7000
+b10001010 )
+b1000 +
+1$
+#7500
+0$
+#8000
+b10100010 )
+b1001 +
+1$
+#8500
+0$
+#9000
+b0 )
+b10100010 !
+b10100010 *
+b0 +
+1$
+#9500
+0$
+#10000
+b11000 )
+b1 +
+1$
+#10500
+0$
+#11000
+b110000 )
+b10 +
+1$
+#11500
+0$
+#12000
+b1001000 )
+b11 +
+1$
+#12500
+b0 (
+b0 )
+b0 !
+b0 *
+b0 +
+0%
+0$
+#13000
+b11000 )
+b11000 (
+b1 +
+1%
+1$
+#13500
+0$
+#14000
+b110000 )
+b10 +
+1$
+#14500
+0$
+#15000
+b1001000 )
+b11 +
+1$
+#15500
